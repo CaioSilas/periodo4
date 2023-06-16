@@ -1,0 +1,100 @@
+DIvisibilidade e primos:
+	a) Divisibilidade
+		a|b: a divide b
+		b é multiplo de a
+		a|b -> Existe c tal que a.c=b
+		a\|-> a não divide b
+	b) Primos
+		Um inteiro positivo p>1 é chamado numero primo se seus unicos divisores são +-1 e +1p, isto é, p admite apenas divisores triviais
+		Se n>1 não é primo, então n é dito composto. Se n é composto  então n=a.b, onde 1<a,b<n
+
+Teorema fundamental da aritmetica:
+	Todo inteiro n>1 pode ser escrito como um produto de numeros primos
+	Teorema: Não existe maior primo, ou seja há uma quantidade infinita de primos
+
+Maximo divisor comum e algoritmo de Euclides:
+	Suponha que a e b são inteiros, não sendo nulos, um inteiro d é chamado divisor comum de a e b se divide ambos a e b, ou seja, d|a e d|b
+	Observação:  1 é divisor comum de a e b e que qualquer divisor comum de a e b não pode ser maior do que |a| e |b|
+			Existe um maior divisor comum de a e b, que pode ser denotado por d=mdc(a,b). Ele é chamado de maximo divisor comum
+			Ex1.: Os divisores comuns de 12 e 18 são +-(1,2,3,6) e mdc=6
+			Ex2.: Para qualquer inteiro a, temos que mdc(1,a)=1
+			Ex3.: Para qualquer primo p, temos que o mdc(p,a)=p ou mdc(p,a)=1
+	Teorema: Seja d o menor inteiro positivo da forma ax+by. Então:
+			 d=mdc(a,b)
+			 d=ax+by=5.x+9.y
+			 d=mdc(5,9)=1 -> 5x+9y=1	(se x=2 e y=-1 valida a igualdade)
+	Teorema: Um inteiro positivo d=mdc(a,b), se e somente se, d tem as duas propriedades:
+			P1) d divide ambos a e b
+			P2) Se c divide ambos a e b, então c|d
+	Propriedades
+		1) mdc(a,b)= mdc(b,a)
+		2) se x>0, então mdc(ax,bx)=x.mdc(a,b)
+		3)Se d=mdc(a,b), então mdc(a/d,a/d)=1
+		4)para qualquer inteiro x,mdc(a,b)=mdc(a,b+ax)
+			Ex.: mdc(4,6)=2
+				y=3
+				mdc(4,6+12)=mdc(4,18)=2
+
+Algoritmo Euclidiano:
+	O(raiz de n), n=|a|+|b|
+	Complexidade-> algoritmo para encontrar d, listando todos os divisores de a e b, para depois escolher d
+
+Algoritmo Euclidiano:   Determina d=mdc(a,b) aplicando o algoritmo de divisão em (a e b) e entao, repetidamente,
+				aplicando a cada novo quociente e resto ate obtermos o resto nulo. O ultimo resto nulo é d=mdc(a,b)
+
+			Exemplo: Sejam a=540 e b=168
+					1)540/168=3 e resto 36
+					2)168/36=4 e resto 24
+					3)36/24=1 e resto 12
+					4)24/12=2
+					mdc(540,168)=12
+					
+					12=540x + 168y
+					12=36-24*1(3)
+					jogando o 12 pra equaçao de cima: 12=36-(168)+36*4=36*5-168
+					36=540-168*3
+					jogando na equação 3: 12=5*540-15*168-168=5*540-16*168
+								então x=5 e y=-16
+
+
+Minimo multiplo comum(mmc):
+	Suponha que a e b sao inteiros diferentes de zero. Note |ab| é um multiplo comum positivo de a e b
+	Assim, existe um menor multiplo positivo em comum entre a e b, ele é denotado por mmc(a,b) e é chamado de minimo multiplo comum de a e b.
+	Ex1.: mmc(2,3)=6	
+		mmc(4,6)=12
+		mmc(9,10)=90
+	Teorema: Suponha que a e b são inteiros não nulos
+			mmc(a,b)=|a.b|/mdc(a,b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			  
+				

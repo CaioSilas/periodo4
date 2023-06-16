@@ -1,0 +1,67 @@
+Relações de recorrência
+	Sequências é uma função cujo domínio é N = {1,2,3,...} ou N0 = NU {0} = {0,1,2,3...}
+	Exemplo : Sequência 3,6,12,24... Pode ser definida recurssivamente por a0 = 3, aK = 2ak-1 para K >= 1 ou a0 = 3; aK+1 = 2aK para K >= 0
+
+O seu n-ésimo termo : an = 3.2^n
+
+=> Relações de recorrência {aK = 2ak-1 para ou aK+1 = 2aK}
+=> a0= 3 : condição inicial
+=> an = 3 * 2^n é a solução de relações de recorrência {1,2,4,8,16...} {7,14,28,56,112...}
+
+PA : Progessão aritmética
+	a,a+b,a+2b,a+3b....
+	a1 = a
+	aK + 1 = aK+d, k >= 1
+	Solução : an = a + (n-1)d
+
+PG: Progressão geométrica
+	a,a*r,a*r^2,a*r^3...
+	a1=a; aK + 1 = r, para K >= 1
+	an = a*r^n-1
+
+Ex: Considere aN como uma sequência que satisfaz a relação de recorrência 
+	aN = aN-1 - aN - 2 para n = 2,3,4...
+	Suponha que a0 = 3  e a1 = 5. Quais os valores de a2 e a3?
+	R¹:a2 = a1 - a0 = 5 - 3 = 2
+	R²:a3 = a2 - a1 = 2 - 5 =-3
+
+Ex: Determine se a sequência {aN},em que aN = 3n para todo número inteiro não negativo N, é uma solução da relação de recorrência aN = 2aN-1 - aN - 2 para N = 2,3,4,... E para aN = 2^n ? e para aN = 5?
+	R¹:aN = 2an-1 - an-2 => 3n = 2(3(n - 1)) - (3(n-2)) => 3n = 6n - 6 - 3n + 6 => 3n = 3n
+	R²:aN = 2^n => 2^n = 2(2^n-1) - 2^n-2 => 2^n != 2^n - 2^n-2 => 2^n(1-2^-2)
+	R³:aN = 5 => 5 = 2(5 - 1) - (5 - 2) => 5 = 8 - 3 => 5 = 5
+
+
+Relações de recorrência linear com coeficiente constantes
+
+	an = 0 (an-1,an-2,...,an-k,n) => relação de recorrência de ordem 
+
+caso particulas :
+	an = c1*an-1 + c2*an-2 + ... + ck * an-k + F(n)
+	c1,c2,c3,...,cK são coeficientes constantes
+	cK != 0
+	Se F(n) = 0,então a relação é também dita homogênea
+
+Ex1: an = 5*an-1 - 4*an-2 + n^2
+	Ordem 2
+	Linear
+	F(n) = n^2 , não e homogênio
+	Depende de dois termos
+		a1 = 2 a2 = 2
+		a3 = 5a2 - 4a1 + 3^2 => 10 - 8 + 9 => 11
+
+Ex2: an = 2*an-1 * an-2 + n^2
+	Ordem 2
+	Não linear
+	F(n) = n^2, não é homogênio
+	Depende de dois termos
+
+Ex3: an = n * an - 1 + 3an-2
+	Ordem 2
+	nao linear
+	F(n) = 0, homogênio
+	depende de dois termos
+
+Ex4: an = 2an-1 + 5an-2 - 6an-3
+	oredem 3
+	linear
+	f(n) = 0, homogênia

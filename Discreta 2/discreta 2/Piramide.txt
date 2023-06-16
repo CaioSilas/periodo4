@@ -1,0 +1,41 @@
+Ex. qual é o coeficiente de x^12 y^13 no desenvolvimento de (2x-3y)^25?
+	Aplicar o binomio de newton:
+	(x+y)^n = Somatorio de(n j) x^n-j y^j
+	(2x-3y)^25 => (x'+y')^25
+	somatorio (25 13) 2x^12 -3y^13 =>{2^12 * 3^13} * x^12 * y^13
+	
+Corolário:
+	=>Considere n como um inteiro não negativo.Então,somátorio(n k) = 2^n
+	=>Considere n como um número inteiro positivo.Então, somátorio (-1)^k(n k) = 0
+	=>Considere n como um número inteiro não negativo.Então,Somátorio de 2^k(n k) = 3^n
+
+Indentidade de Pascal e Triângulo de Pascal:
+	=>Identidade de Pascal: considere n e k com números inteiros positivos (n>=k).Então,(n+1 k) = (n k-1) + (n k)
+
+Triângulo de Pascal:
+	=>A n-ésima linha de triângulo de Pascal consiste em coeficientes binarios .(n k),k = 0,1,...,n
+
+Identidade de Vandermonde.Considere m,n,r como número inteiros não negativos com r não excedente a m ou n. Então (m+n r) = somátorio(m r-k)(n k)
+Corolário:Se m é um número inteiro não negativo.
+	(2n n) = Somátorio (n k)^2
+
+Teorema. Considere n e r como números inteiros não negativos,com r <= m
+	Então (n+1 r+2)=somatorio (j r)
+
+Combinações com repetição
+Teorema: Há C(n+r-1,r) = C(n+r-1,n-1) r-combinações de um conjunto com n elementos,quando a repetição dos elementos é permitida.
+	Ex.Suponha que uma cafeteria tenha quatro tipos diferentes de biscoitos,há quantas maneiras diferentes possíveis de escolher 6 biscoitos?Suponha que apenas o tipo de biscoito seja relevante, e não os biscoitos individualmente ou a ordem em que são escolhidos.
+	R'=C(9,3) => 9!/3!6! = 84
+	
+Permultação com objeto indênticos
+	Ex.Quantas sequências diferentes podem ser obtidas reorganizando-se as letras da palavra SUCCESS?
+	R'= 7!/3!2! (Divide pelos que mais se repetem)
+	R"= C(7,3) * (4,2) * (2,1) * (1,1) =>7!/3!4! * 4!/2!2! * 2!/1!1! = 7!/3!2!
+
+Teorema: O nucleo de permutações diferentes de n objetos, em que há n1 objetos idênticos do tipo 1, n2 objetos idênticos do tipo 2 ... e nk objetos idênticos do tipo k é
+	N!/N1!N2!N3!...NK!
+
+	Ex.Quantas sequências de extensão r podem ser formadas com um alfabeto que contem 26 letras
+	R'= 26^r
+	Ex.Há quantas maneiras possíveis de escolher quatro pedaços de fruta de uma tigela que contém maçãs,laranjas,e pêras, Se a ordem em que cada pedaço é escolhido não é relevante, a pessoa o tipo de frutas, e o pedaço individual não é relevante também, sendo que há pelo menos quatro pedaços de cada tipo
+	R'=> n = 3 r= 4 => C(6,2) 6!/2!4! => 6*5/2 = 15

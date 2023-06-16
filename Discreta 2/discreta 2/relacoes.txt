@@ -1,0 +1,104 @@
+ 	Relações 
+
+Par ordenado : (a,b)
+	(a,b) = (c,d) => {a=c,b=d}
+
+Produto cartesiano
+	A x B = {(a,b) | a pertence A e b pertence B}
+	A² = A x A
+	
+Ex: A = {1,2}, B = {a,b,c}
+
+A x B = {(1,a),(1,b),(1,c),(2,a),(2,b),(2,c)}
+B x A = {(a,1)(a,2)(b,1)(b,2)(c,1)(c,2)}
+A x A = {(1,1)(1,2)(2,1)(2,2)}
+n(AxB) = n(A) * n(B)
+
+	Relações
+Relação Binária .: Subconjunto de AxB
+(AxB) nao pertence R => a R/ b
+
+Ex:
+A= (1,2,3)
+B= (x,y,z)
+R= {(1,y),(1,z),(3,y)}
+
+a) R é uma relação de A x B
+	1Ry,1Rz,3Ry
+	1R/x,2R/x,2R/y,3R/x,3R/z
+
+Domínio de R é {1,3}
+Imagem é {y,z}
+
+	Relação inversa
+R: uma relação qualquer de um conjunto A em um conjunto B
+A inversa de R, denotada por R-1
+	R^-1={(b,a)|(a,b) pertence a R
+
+Ex:
+A = {1,2,3}
+B = {x,y,z}
+R = {(1,y),(1,z),(3,y)}
+R^-1 = {(y,1),(z,1),(y,3)}
+(R^-1)^-1 = R
+
+	Representações pictóricas
+a) Relações Sobre R
+Seja S uma relação sobre o conjunto R dos números reais, isto é, S é um subconjunto de R² = R x R
+S: subconjunto de pares ordenados de números reais que satisfazem E(x,y) = 0
+	X² + Y² = 25 => X² + Y² - 25 = 0 => E(x,y) = 0
+	Circulo
+
+	Grafos Orientados de Relações Sobre Conjuntos
+Conjunto A = {1,2,3,4}
+Relação R = {(1,2),(2,2),(2,4),(3,2),(3,4),(4,1),(4,3)}
+	1-2
+	|/|
+      4-3
+
+	Representação Pictóricas de Relações Sobre Conjunto Finitos
+a) R = {(1,y),(1,z),(3,y)}
+	Matriz da Relação
+	  |1 |2 |3
+	x |0 |0 |
+	y |1 |0 | 
+	z |1 |0 |1
+
+b)Diagrama de flecha
+	R = {(1,y),(1,z),(3,y)}
+	A = {1,2,3}, B = {x,y,z}
+
+
+	Composição de Relações
+Sejam A,B,C conjuntos
+R uma relação de A em B
+S uma relação de B em C
+R e S dão origem a uma relação de A em C denotado por RoS o=>composição
+a(RoS) c se, para alguem b pertence a B, temos aRb e bSc. ou seja, RoS = {(a,c)|existe b pertence a B para o qual (a,b) pertence a R e (b,c)pertence a S}
+
+Ex:
+A = {1,2,3,4}
+B = {a,b,c,d}
+C = {x,y,z}
+R = {(1,a),(2,d),(3,a),(3,b),(3,d)}
+S = {(b,x),(b,z),(c,y),(d,z)}
+Diagrama de flecha
+2(RoS)z,uma vez que 2Rd e dSz
+3(RoS)x e 3(RoS)z
+
+(RoS) = {(2,z),(3,x),(3,z)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+Tecnicas de contagem:
+	Combinatorio: estudo dos arranjos de objetos
+		Otimização/teoria dos jogos
+	Enumeracao: contagem de objetos com uma certa propriedade
+Aplicações da contagem:
+	.Complexidade de algoritmos
+	.definicao de numeros de telefone em endereços de protocolo de rede
+	.probabilidade de eventos
+As regras basicas de contagem podem resolver diversos problemas:
+	->enumerar os diferentes numeros de telefone possiveis em um país
+	->as senhas permitidas em sistema computacional
+	->as difertentes ordens nas quais atletas podem terminar uma corrida
+
+Principio da casa dos pombos:
+	Quando os objetos sao colocados em caixas e há mais objetos do que caixas, então á uma caixa que tera pelo menos dois objetos.
+		Exemplo: No meio de um grupo de 15 estudantes, ou mais, pelo menos 3 nasceram no mesmo dia de semana
+
+	*Arranjos com ou sem ordenaçao de objetos de um conjunto: permutação e combinação
+		Exemplo: 100 finalistas de uma competição com 200 estudantes foram convidados para um jantar. Podemos contar os grupos possiveis dos 100 estudantes que serao convidados. Assim como, o modo como os 10 primeiros podem ser premiados
+			A) As bases de contagemm
+				1)Suponha que a senha de um sistema computacional possui 6,7 ou 8 caracteres. Cada um desses caracteres deve ser um numero ou uma letra do alfabeto. Cada senha deve conter no minimo um numero. Quantas senhas sao possiveis?
+				2)Contar as possibilidades favoraveis em um experimento e o total de possibilidades desse experimento para determinar as probabilidades dos eventos disertos.
+				3)Contar o numero de operaçoes usadas por um algoritmo para estudar seu temoi de complexidade 
+		Principio basico da contagem:
+			A) Regra da soma: se uma tarefa pode ser realizada em uma das n1 formas ou em uma das n2 formas, em que nenhum dos elementos do conjunto das n1 formas é o mesmo que algum elemento do conjunto das n2 formas, então há n1+n2 formas de realizar a tarefa
+				Ex1: Suponha que um membro da faculdade de matematica ou um estudante que tenha mestrado em matematica seja escolhido como representante para um comite da universidade. Quantas escolhas diferentes podem ser feitas esse representante se houver 37 membros da faculdade de matematica e 83 mestres em matematica e nenhum foi ao mesmo tempo um membro da faculdade e um mestre
+					37+82=120 modos
+				ex2: Um estudante pode escolher um projeto de computação a partir de 3 listas. As 3 listas contem 23,15,19 projetos possiveis, respectivamente. Nenhum projeto esta em mais de uma lista. Quantos projetos possiveis existem para serem escolhidos?
+					23+15+19=57 maneiras
+				ex3: Qual o valor de K depois do seguinte codigo ser executado?
+					k:=0;
+					for i1:=1 to n1
+						k:=k+1;
+					for i1:=1 to n2
+						k:=k+1;
+					.
+					.
+					.
+					for i1:=1 to nm
+						k:=k+1;
+
+			A regra da soma pode ser escrita em termos de conjuntos.
+			Se A1,A2,...,Am sao conjuntos finitos disjuntos, entao o numero de elementos na uniao desses conjuntos é a soma dos numeros de elementos nos conjuntos.
+			|A1|: quantidade de maneiras para escolher um elemento de Ai para i=1,2,...,m
+			|A1Ua2U...UAm|=|A1|+|A2|+|A3|+...|Am|
+			Sendo os conjuntos disjuntos, quando selecionamos um elemento de um dos conjuntos Ai, nao podemos selecionar tambem um elemento de um conjunto diferente Aj.
+			
+			B) Regra do produto: Suponha que um procedimento pode ser dividido em uma sequencia de duas tarefas. Se houver n1 formas de fazer a primeira tarefa e para cada uma dessas formas de fazer a primeira tarefa há n2 formas de fazer a segunda tarefa, então há n1.n2 formas de concluir o procedimento.
+				Ex1: Uma nova companhia com apenas 2 empregados aluga um andar de um predio com 12 salas. Quantas formas diferentes há para designar as diferentes salas para esse dois empregados?
+					12.11=132
+				Ex2: As cadeiras de um auditorio deverao ser etiquetadas com uma letra e um numero inteiro positivo entre 1 e 100. Qual é o maior numero de cadeiras que podem ser etiquetadas de maneira diferente?
+					Alfabeto:26 letras
+					26*100=2600
+				Ex3: Há 32 computadores em um centro computacional. Cada computador tem 24 portas. Quantas portas diferentes para um computador existem no centro?
+					32.24
+				Ex4: Quantas sequencias de bits comprimento 7 existem?
+					2^7
+				Ex5: Quantas placas de identificação estao disponiveis, se cada placa contem uma sequencia de 3 letras seguidas de 3 numeros?
+					26^3.10^3
+Diagramas de arvore:
+	Uma arvore consiste em uma raiz, um numero de galhos que parte da raiz e possiveis galhos adicionais no final de cada galho
+	*Usamos cada galho para representar cada escolha possivel
+	*representamos as possiveis saidas pelas folhas, que são os finais dos galhos sem outros que começem a partir deles.
+	*O numero de escolhas necessarias para alcançar uma folha pode variar
+	Ex) Quantas cadeias de bits de comprimento 4 que não possui dois numeros 1 consecutivos
+			  .
+		      / \
+		     1  0
+		     |  /\
+		     0  1 0
+		    /\  |
+		    0 1 0	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

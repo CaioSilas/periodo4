@@ -1,0 +1,137 @@
+Propriedades dos numeros inteiros:
+	numeros naturais: N={0,1,2,3,...}
+	numeros inteiros: Z={-2,-1,0,1,2,...}
+Lei associativa:
+	(a+b)+c = a +(b+c)
+	(ab)c = a(bc)
+Lei comutativa:
+	a+b = b+a
+	ab = ba
+Lei distributiva:
+	a(b+c) = ab+ac
+Identidade:
+	a+0 = 0 + a= a
+	a.1 = 1.a = a
+Inverso aditivo:
+	a+(-a)=(-a)+a=0
+
+Teorema fundamental da aritmetica:
+	Todo inteiro positivo n>1 pode ser escrito univocamente como um produto entre numeros primos
+
+Ordem, desigualdade, valor absoluto:
+	Ordem: 
+		P1) Se a e b pertencem a N, então a+b e a.b pertencem a N
+		P2) Para qualquer inteiro a, aEN, a=0 ou -aEZ
+	Desigualdade:
+		a>b significa que b<a
+		a<=b significa que a<b ou a=b
+		a>=b significa que b<=a
+		Ser da tricotomia: Para quaisquer inteiros a e b, exatamente uma das formulas abaixo vale:
+						a<b ou a=b ou a>b
+		Suponha que a<=b e seja c um inteiro qualquer:
+			1)a+c <= b+c
+			2)ac <= bc, quando c>0
+			  ac >= bc, quando c<0
+	Valor absoluto:
+		|a|=|a, se a>=0
+		    |-a, se a<0
+
+Induçao matematica:
+	Seja S um conjunto de inteiros positivos, com as duas propriedades a seguir:
+		a) 1 pertence a S
+		b) Se K pertence a S, então K+1 pertence a S. Então S é o conjunto de todos inteiros positivos
+	Seja P uma proposão definida sobre os inteiros, n>=1, tal que:
+		1) P(1) é verdadeira
+		2) P(K=1) é verdadeira sempre que P(K) for verdadeira
+		Então P é verdadeira para todo inteiro n>=1
+	Seja P uma proposição definida sobre inteiros n>=1 tal que:
+		i) P(1) é verdadeira
+		ii) P(K) é verdadeira sempre que P(j) é verdadeira para todo 1<=j<K
+		   Então P é verdadeiro para todo inteiro n>=1
+	Principio de boa ordem:
+		Seja S um conjunto não vazio de inteiros positivos. Então S contem um menor elemento, ou seja, S contem um elemento a tal que a<=S para todo S em S
+	Um conjunto S de inteiros é dito cotado inferiormente se todo elemento de S é maior que algum inteiro m(que podera ser negativo). O numero m é chamado cota inferior de S.
+
+Algoritmo de divisao:
+	Sejam a e b inteiros com b diferente de 0. Existem inteiros q e r tais que:
+		a=b*q+r e 0<=r<|b|
+		Alem disso, q(quociente) e r(resto) são unicos.
+		Ex.: a=4461 e b=16
+			a/b=4461/16=278,8125
+			q=278
+			r=a-b*q= 4461-16*278
+			r=13    q=278
+		Ex.:	a=-268 e b=3
+			Passo 1: a/b=262/3=87,333=q'
+				    r'=a-b*q'=262-3.87
+				    r'=1        q'=262	
+			
+			Passo 2:-262=3*q+r
+				  262= 3*87+1(-1)
+				  -262=-3*87-1
+				  -262=3*(-87)(-1+3)-3(nao pode ter resto negativo)
+				  -262=3*(-88)+2(jogou o -3 para 0 3*-87)
+					q=-88  r=2
+					
+						
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					

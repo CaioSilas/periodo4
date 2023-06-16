@@ -1,0 +1,118 @@
+Teorema fundamental da aritmetica
+a) Inteiros primos entre si
+	Dois inteirosa e b sao ditos primos entre si(ou coprimos), se mdc(a,b)=1. Consequentemente, se a e b são coprimos entao existem inteiros x e y tais que ax+by=1.
+	 Reciprocamente, se ax+by=1, então a e b são coprimos.
+	Exemplo: 12 e 35 => mdc(12,35)=1
+		   49 e 18 => mdc(49,18)=1
+	Teorema: Suponha que mdc(a,b)=1 e que ambos a e b dividem c. Então, a.b divide c.
+	Teorema: Suponha que a|bc e mdc(a,b)=1. Então, a|c
+		Demonstração: Se a|b e a|c, então a|(b+c) e a|(b-c)
+				Como mdc(a,b)=1, então existem x e y tais que ax+by=1
+				ax+by=1
+				cax+cby=c
+				Temos que a|cax,além disso, a|bcy, por hipótese, a|bc
+				Logo, a divide a soma acx+bcy=c
+
+b) Todo inteiro n>1, pode ser expresso univocamente(exceto quanto a ordem) como um produto de primos
+	Assim, n pode ser expresso univocamente na forma da fatoração canônica de n por:
+		n=p1^m1.p2^m2 ... pr^mr, onde os mi são positivos e p1<p2<p3...<pr
+	Exemplo: Dados:
+		a=2^4.3^3.11.13
+		b=2^3.3^2.5^2.11.17
+		Encontre d=mdc(a,b) e m=mmc(a,b)
+			   d=2^3.3^2.11
+			   mdc(a,b).mmc(a,b)=a.b ; mmc(a,b)=2^4.3^3.5^2.11.13.17
+||)Relação de congruencia
+	Seja m umm inteiro positivo. Dizemos que a é congruente a b modulo m e denotamos por: a≡b mod m ou a≡ b(modulo m) se m divide a diferença a-b.
+	O inteiro m é chamado de modulo a negação de a≡b(mod m) é a\≡ b(mod m)
+	Exemplo: a) 87≡23(mod 4)?
+			87-23=64   64|4=8
+			87|4=3     23|4=3
+		    b)67≡1(mod 6) SIM
+		    c)27≡8(mod 9) NAO
+	Teorema: Seja m um inteiro positivo. Portanto,
+			i) Para qualquer inteiro a, temos a≡a(mod m) 
+			ii)Se a≡b(mod m), então b=a(mod m)
+			iii)Se a≡b (mod m) e b≡c(mod m) então a≡c(mod m)
+	A) Classe de Residuos
+		Consiste em todos aqueles inteiros com o mesmo resto, quando dividimos por m.
+	Um conjunto de n inteiros {a1,a2,...,am} é dito um sistema completo de residuos modulo m se cada ai se origina de uma classe diferente de residuos 
+	 Assim, os inteiros 0 ate m-1 formam um sistema completo de residuos
+		[X]m ou [X]: denota a classe de residuos (mod m) contendo um inteiro X, isto é, os inteiros que são congruentes a X
+					[X]={aEZ| a≡x(mod m)}
+		As classes de residuos podem ser denotadas por:[0],[1],[2],...[m-1]
+		Exemplo: As classes de residuos modulo m=6 são:
+			[0]={...,-18,-12,-6,0,6,12,18,...}
+			[1]={...,-17,-11,-5,1,7,13,19,...}
+			[2]={...,-16,-10,-4,2,8,14,20,...}
+			[4]={...,-14,-8-2,4,10,16,22,...}
+			[5]={...,-13,-7,-1,5,11,17,23,...}
+			{-2,-1,0,1,2} também forma um sistema completo de residuos modulo m=6 e esses representantes tem valores absolutos mínimos
+			
+B)Aritmetica de congruencia
+	Teorema: Suponha que a≡c(mod m) e b≡d(mod m). Então:
+		i)a+b≡c+d(mod m)
+		ii)a.b≡c.d(mod m)
+
+Observação: Suponha que p(x) é um polinomio com coeficientes inteiros. Se s≡t(mod m), então p(s)≡p(t)(mod m)
+		Exemplos: 
+			2≡ 8(mod 6)
+			5≡ 41(mod 6)
+			A) 7≡49(mod 6)
+			B) 10≡ 328(mod 6)
+			C) p(x)=3x^2-7x+5
+			   p(2)=12-14+5
+			   p(8)=192-56+5=141
+			   p(2)≡p(8)(mod 6)
+				3≡141(mod 6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aula5
+
+Teorema:lei de cancelamento
+Suponha que ab≡ac(mod m) e mdc(a,m)=1, entao b≡c(mod m)
+Teorema: Suponha que ab=ac(mod m) e que d=mdc(a,m). Então ,b≡c(mod m/d)
+
+Exemplo: 6≡36(mod 10)
+
+mdc(3,10)=1
+mdc(6,10)\=1
+6≡36 = 2≡12(mod 10)
+1\≡6(mod 10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

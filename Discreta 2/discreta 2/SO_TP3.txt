@@ -1,0 +1,65 @@
+Um semáforo é uma variavel,um mecanismo de sincronização sem espera ativa.quem podem sem manipuladas por duuas primitavas atomicas.
+
+
+Assim, e de forma a consolidar os conhecimentos, as principais operações sobre semáforos são:
+
+Inicialização
+Recebe como parâmetro um valor inteiro indicando a quantidade de processos que podem aceder a um determinado recurso.
+
+Operação wait
+Decrementa o valor do semáforo. Se o semáforo está com valor zero, o processo é posto em espera. Para receber um sinal, um processo executa o wait e bloqueia
+se o semáforo impedir a continuação da sua execução.Operação signal
+
+Se o semáforo estiver com o valor zero e existir algum processo em espera, um processo será acordado. Caso contrário, o valor do semáforo é incrementado. 
+Para enviar um sinal, um processo executa um signal.
+
+
+2) Veja que, no livro do Tanenbaum, semáforo é explanado com as instruções up() e down().
+Como a semântica (o funcionamento) de UP() e DOWN( ) são implementados neste
+programa?
+	R:Sao implementadas por meio da função sem_wait e sem_post.
+
+
+
+
+
+segunda parte
+
+6) O processo pode ser de dois tipos, quais?
+	R:Eles podem ser processos independentes ou co-op.
+
+7) Processos podem ser comunicar por Memória Compartilhada e por troca de mensagens.
+Quando duas threads se comunicam, qual o modelo acima eles usam e por que?
+	R:Memória compartilhada, porque threads sao instacias de um processo como eles estao acessando a mesma memoria nao tem pq usar uma troca de mensagem
+
+8) O que é uma mensagem síncrona e assíncrona? Bloqueante e não bloqueante. Explique
+isto, com suas palavras, para mim.
+	R:mensagem sincrona ocorre quando o remetente ou o destinatario e bloqueado durante o envio da mensagem, ja em um envio de mensagem assincrono ocorre
+	um envio sem bloqueio. Dassa forma, o recebimento sem bloqueio faz com que o destinatário receba uma mensagem válida ou nula.
+
+9) O que é uma passagem de mensagem direta e indireta? “Sockets” usa o mecanismo
+direto ou indireto?
+	R:uma passagem direta de mensagem quem deseja se comunicar deve nomear explicitamente o destinatário ou remetente da comunicação.
+	por exemplo. send(p1, message) significa enviar a mensagem para p1.
+	Da mesma forma, receive(p2, message) significa receber a mensagem de p2.
+	Na passagem indireta de mensagens,usa caixas de correio (também conhecidas como portas) para enviar e receber mensagens.onde cada caixa tem seu ID exclusico e só
+	é possivel se comunicar se compartilharem a mesma caixa de correio.
+	Os sockets usam a forma de comunicação direta.
+
+10) Veja esta página UPC-diff-shared-and-msg. Enfim. Segundo este texto, em suas palavras,
+quais são as diferenças????
+	R: A diferença é que processos que compartilham memoria estão a mesma maquina, e processos que trocam menssagem estão
+	em maquinas distindas por exemplo paginas web.
+
+
+https://www.geeksforgeeks.org/difference-between-shared-memory-model-and-message-passing-model-in-ipc/?ref=rp
+https://www.geeksforgeeks.org/inter-process-communication-ipc/#:~:text=Inter%20process%20communication%20(IPC)%20is,Message%20passing
+
+
+tempo das respostas 
+Questao 2 => 1:35 min
+Questao 6 => 3:36 min
+Questao 7 => 3:43 min
+Questao 8 => 4:05 min
+Questao 9 => 4:32 min
+Questao 10 => 5:05 min

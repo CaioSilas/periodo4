@@ -1,0 +1,34 @@
+#Rômulo Júnio Vieira Rocha 
+#21.1.4022
+def count_combinations(x):
+    if (1<=x and x<=100):
+        if(x == 4):
+            x =1
+        # Inicialização do vetor de DP com zero
+        dp = [0] * (x + 1)
+        
+        # Inicialização da base da recursão
+        dp[0] = 1
+        
+        # Preenchimento do vetor de DP
+        for i in range(1, x + 1):
+            for j in [1, 2, 3,4]:
+                # Substitui o 4 pelo 1
+                if j == 4:
+                    j = 1
+                if i >= j:
+                    dp[i] += dp[i-j]
+                    
+        # Retorna o resultado
+        return dp[x]
+    else :
+        print("Valor invalido, apenas valores maiores que 0 e menores  ou iguais a 100")
+
+while True:
+    try:
+        num = int(input())
+        func =count_combinations(num)
+        print(func)
+    except:
+        break
+

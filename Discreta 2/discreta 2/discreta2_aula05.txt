@@ -1,0 +1,104 @@
+*** perdi uma parte
+Teorema:lei de cancelamento
+Suponha que ab≡ac(mod m) e mdc(a,m)=1, entao b≡c(mod m)
+Teorema: Suponha que ab=ac(mod m) e que d=mdc(a,m). Então ,b≡c(mod m/d)
+
+Exemplo: 6≡36(mod 10)
+
+mdc(3,10)=1
+mdc(6,10)\=1
+6≡36 = 2≡12(mod 10)
+1\≡6(mod 10)
+
+6≡36(mod 10)
+mdc(6,10)=2=d
+6≡36(mod 10)= 1≡6(mod 5)
+10/d=10/2=5
+
+Se ab≡ac(mod p) e a\≡0(mod p), então b≡c(mod p)
+Exemplo: 	4.5≡4.10(mod 5)
+		20≡40(mod 5)
+		4\≡0(mod 5)
+		5≡10(mod 5)
+
+Sistemas redduzidos de residuos, função phi de Euler:
+	
+	O numero de classes de residuos coprimos de m, ou equivalente, o numero de inteiros entre 1 e m que são coprimos de m é denotado por  Ø(m)
+	Exemplos:
+	a) modulo m=15
+		Os inteiros entre 1 e 15 que são coprimos de m=15 são:1,2,4,7,8,11,13,14 
+		Ø(15)=8
+
+	b) Considere qualquer primo p. Todos numeros entre inteiros entre 1 e p-1 são coprimos. Então:
+	Ø(p)=p-1
+	Uma função f com dominio nos inteiros positivos(N) é chamada multiplicativa, quando a e b são primos entre si
+		f(ab)=f(a).f(b)
+
+Teorema: A função phi de Euler é multiplicação, ou seja, se a e b são primos entre si, então
+	Ø(a,b)=Ø(a).Ø(b)
+
+
+
+Equaçoes de congruencia:
+	a.n.x^n + a.n-1.x^(n-1) + ... a1x + a0≡0(mod m), grau n se an≡0(mod m)
+	Suponha que s≡t(mod m). Então s é uma solução de (1) se, e somente se, t é uma solução de (1)
+	O numero de soluçoes de (1) é definido como o numero de soluçoes incongruentes ou equivalentemente o numero de soluçoes no conjunto:
+	{0,1,2,3,...,m-1}
+	Essas soluções sempre podem ser encontradas por teste, ou seja, substituindo cada um dos m numeros em (1) para verificar se eles, de fato,satistazem a equaçao.
+	Exemplos: Considere as equações:
+		A)x²+x+1≡0(mod 4)
+		m=4={0,1,2,3}	
+		x=0=> 1≡0(mod 4)=NAO
+		x=1=> 3≡0(mod 4)=NAO
+		x=2=> 7≡0(mod 4)=NAO
+		x=3=> 13≡0(mod 4)=NAO
+		SEM SOLUÇAO
+
+
+		B)x²+3≡0(mod 6)
+		{0,1,2,3,4,5}
+		x=0=> 3≡0(mod 6)=NAO
+		x=1 NAO
+		x=2 NAO
+		x=3=> 12≡0(mod 6)=SIM
+		x=4=> 19≡0(mod 6)=NAO
+		x=5=> 28≡0(mod 6)=NAO
+		Soluçao geral: 3+6k,kEZ
+
+Observação: um coeficiente de uma equacao de congruencia podem sempre ser reduzidas modulos m, pois resultam em uma equação equivalente, ou seja, uma equação com as mesmas soluções.
+	Exemplo:
+		75x²+28x+14≡0(mod 6)
+		3x²+4x+2≡0(mod 6)
+		3x²-2x+2≡0(mod 6)
+	Os coeficientes são congruentes modulo m=6
+
+Usualmente, escolhemos coeficientes entre 0 e m-1 ou entre -m/2 e m/2
+
+Equação de congruencia linear:
+	ax≡1(mod m)
+	Teorema: Se a e m são coprimos, então ax≡1(mod m) admite uma unica solução, caso contrario não tem solução.
+	Exemplos: A) 6X≡1(mod 33)
+			a=6, m=33
+			mdc(a,m)=3
+			Não tem solução
+
+			B)7X≡1(mod 9)
+			  mdc(7,9)=1
+			  Tem uma solução
+			  Para encontrar a solução, devemos testar 0,1,...,8
+			  x=4 é solução
+			  Solução geral: 4+9k,kEz
+
+Suponha que ax≡1(mod m) tenha solução, ou seja, mdc(a,m)=1
+Suponha que m é um numero grande, então o algoritmo Euclidiano pode ser empregado para encontrar uma solução.
+Usamos o algoritmo para determinar X0 e Y0 tais que: aX0 + MY0 = 1
+Exemplo:
+	81≡1(mod 256)
+	a=81, m=256
+	mdc(81,256)=?
+	81X0+256Y0=1
+
+
+
+
+		

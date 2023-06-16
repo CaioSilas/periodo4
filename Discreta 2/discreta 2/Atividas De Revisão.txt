@@ -1,0 +1,58 @@
+
+Princípios básicos de contagem
+
+1-Suponha que uma faculdade tenha 3 disciplinas diferentes de história,4 disciplinas de literatura e 2 disciplinas de sociologia.
+	A) O número de maneiras que um estudante pode escolher uma de cada disciplina é?
+	B) O número n de maneiras que um estudante pode escolher apenas uma disciplina é?
+
+R'-> Multiplicação 3*4*2 = 24
+R"->Soma 3+4+2 = 9
+
+2-Encontre o número m de permutações de seis objetos, digamos A B C D E F, tomados 3 por vez.Em outras palavras, determine a quantia de palavras de 3 letras usando apenas as 6 letras sem repetição.
+
+R'-> 6*5*4 = 120 => 6!/(6-3)! => 6!/3! = 120
+
+3-Encontre o número m de palavras de 7 letras que podem ser formadas, usando as letras de palavra BENZENE
+	
+R'-> Permutação com reptição P(7;3,2) => 7!/3!2! => 420
+
+4-Três cartas são escolhidas uma ápos a outra em um baralho de 52 cartas.Encontre o numero m de que isto pode ser feito.
+	A) Com reposição ?
+	B) Sem Reposição ?
+R'-> 52 * 52 *52 = 140.608
+R" -> P(52,3) => 52!/49! => 132.600
+
+5-Encontre o número de combinações de 4 objetos A B C D , tomados 3 por vez.
+
+R¹-> P(4,3) = 24
+  -> 3!     = 6
+  =>P(n,r) = r! * C(n,r) => 4 * 3! = 24
+R² -> C(4,3) = 4
+
+	Qualquer combinação de n objetos,tomados r por vez, determina r! permutações dos objetos na combinção P(n,r) = r! C(n,r)
+
+6-Um fazendeiro compra 3 vacas, 2 porcos e 4 galinhas de um homem que tem 6 vaca, 5 porcos e 8 galinhas. encontre o numero de m de escolhas que o fazendeiro tem
+
+R¹-> C(6,3) => 6!/3!(6-3)! = 20
+R²-> C(5,2) => 5!/2!(5-2)! = 10
+R³-> C(8,4) => 8!/4!(8-4)! = 70
+
+20*10*70 = 14.000
+
+7-Encontre o número mínimo de estudantes em uma turma para ter certeza de que 3 deles nasceram no mês
+
+R¹-> n = 12, k + 1 = 3 => k = 2
+     k n + 1 => 12 * 2 + 1 = 25	
+
+8-Encontre o número de alunos de matemática em uma faculdade, estudando pelo menos 1 dos idiomas frances,alemão e russo dadas as seguintes informações:
+	65 estudam frances 37 - 65 = 28
+	45 estudam alemão 27 - 45 = 18
+	42 estudam Russo 32 - 42 = 10
+	20 estudam Frances e alemão 20 - 8 = 12
+	25 estudam frances e russo 25 - 8 = 17 
+	15 estudam alemao e russo 15 - 8 = 7
+	08 estudam os três
+
+	65+45+42-20-25-15+8
+	
+	total = 100

@@ -1,0 +1,63 @@
+teoria dos numeros: estudar os numeros inteiros e suas propriedades
+
+*divisibilidade
+*aritmetica modular
+
+aplicações de aritmetica modular:
+.cinstrução de numeros pseudoaleatorios
+.determinação de localização de memoria para arquivos de um computador
+.codificação e decodificação de mensagens
+
+Divisibilidade:
+	Se a e b sao numeros inteiros com a diferente de 0, dizemos que a divide b se houver um inteiro c de modo que b=c*a
+	Quando a divide b, dizemos que a é um fator de b e que é multiplo de a
+	Notações: A notação a|b indica que a divide b
+		    Escrevemos a|/b quando a nao divide b
+		    a|b => ∃c|ac = b 
+
+
+	Teorema: Sejam a,b e c numeros inteiros. Então,
+		   a)se a|b e a|c, então:
+			a|(b+c)
+			ex: 4|12 e 4|8,entao 4|20
+		   b) se a|b, entao a|bc para todo numero inteiro c
+
+	Corolário: Se a,b e c sao numeros inteiros, tal que a|b e a|c então a|(mb+nc), sempre que m e n forem numeros inteiros.
+		Dica: use a e b do teorema
+
+	Algoritmo de divisão: Considere um numero inteiro e d como um numero inteiro positivo. Então, haverá numeros inteiros q e r unicos, com 0 <= r < d,tal que a=dq+r
+		Definições: 
+			a: dividendo				(a/d=q e sobra r)
+			b: divisor
+			q: quociente
+			r: resto é um inteiro positivo
+			quociente: q = a div d
+			resto= r = a mod d
+
+		EX.: Quais sao o quociente e resto quando 101 é dividido por 11
+			q=101 div 11 = 9
+			r=101 mod 11 = 2
+		EX.: Quais sao o quociente e resto quando -11 é dividido por 3		
+			q=-11 div 3 = -4
+			r=-11 mod 3 = 1
+			*o resto tem que ser positivo e -11=q*3+r, entao q=-4 e r=1
+
+Aritmetica modular:
+	Definição: Se A e B forem numeros inteiros e M for um numeros inteiro positivo, então A é congruente a B modulo M se M divide A-B
+		Usamos a notação A≡B(mod M) para indicar que A é congruente a B modulo M. Se A e B não forem congruentes modulo M, escrevemos A≠B(mod M)
+	EX.: Determine se 17 é congruente a 5 modulo 6. 
+		17≡5(mod 6)
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
